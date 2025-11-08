@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500&display=swap");
+
+:root {
+  --bg-light: #f7f6f3;
+  --accent: #9dbebb;
+  --text-dark: #333;
+  --text-light: #666;
+  --card-bg: #ffffff;
+  --border: #e2d9c8;
+}
+
+/* --- GLOBALT --- */
+body {
+  margin: 0;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- HEADER --- */
+.header {
+  text-align: center;
+  padding: 70px 20px 50px;
+  background: linear-gradient(180deg, #faf9f6, #f3f2ef);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+  color: #89a7a5;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px rgba(173, 190, 189, 0.4);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  color: #7a8b89;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+/* --- MAIN --- */
+.main {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: var(--bg-light);
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- FOOTER --- */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f0efec;
+  border-top: 1px solid var(--border);
+}
+
+.footerText {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials a {
+  font-size: 1.4rem;
+  color: var(--accent);
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.socials a:hover {
+  color: var(--text-dark);
+  transform: scale(1.1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
