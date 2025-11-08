@@ -11,18 +11,15 @@ function App() {
   return (
     <>
       <header className={styles.header}>
-        <h1 className={styles.logo}> Bistro Northern Lights</h1>
+        <h1 className={styles.logo}>Bistro Northern Lights</h1>
         <p className={styles.subtitle}>
           Smaker fra nord – under lyset av aurora borealis
         </p>
       </header>
 
       <main className={styles.main}>
-        <div className={styles.grid}>
-          {meny.map((menyItem) => (
-            <List key={menyItem.id} {...menyItem} />
-          ))}
-        </div>
+        <List meny={meny} />{" "}
+        {/* 👈 Sender HELE meny-arrayet, ikke ett element om gangen */}
       </main>
 
       <footer className={styles.footer}>
