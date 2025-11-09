@@ -1,1 +1,13 @@
-/* index.css - tom fordi jeg bruker CSS Modules */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500&display=swap");
+
+:root {
+  --bg-light: #f7f6f3;
+  --accent: #9dbebb;
+  --text-dark: #333;
+  --text-light: #666;
+  --card-bg: #ffffff;
+  --border: #e2d9c8;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+}

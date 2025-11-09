@@ -12,14 +12,12 @@ function App() {
     <>
       <header className={styles.header}>
         <h1 className={styles.logo}>Bistro Northern Lights</h1>
-        <p className={styles.subtitle}>
-          Smaker fra nord – under lyset av aurora borealis
-        </p>
+        <p className={styles.subtitle}>Meny</p>
       </header>
 
       <main className={styles.main}>
         <List meny={meny} />{" "}
-        {/* 👈 Sender HELE meny-arrayet, ikke ett element om gangen */}
+        {/*  Sender HELE meny-arrayet, ikke ett element om gangen */}
       </main>
 
       <footer className={styles.footer}>
