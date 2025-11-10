@@ -2,13 +2,14 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://tswt0825.github.io/bistro-northern-lights/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.1",
