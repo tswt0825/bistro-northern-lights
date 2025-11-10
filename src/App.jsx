@@ -16,8 +16,32 @@ function App() {
       </header>
 
       <main className={styles.main}>
-        <List meny={meny} />{" "}
-        {/*  Sender HELE meny-arrayet, ikke ett element om gangen */}
+        <h2 className={styles.categoryTitle}>Forrett</h2>
+        <div className={styles.menuContainer}>
+          {meny
+            .filter((item) => item.kategori === "Forrett")
+            .map((menuItem) => (
+              <List key={menuItem.id} {...menuItem} />
+            ))}
+        </div>
+
+        <h2 className={styles.categoryTitle}>Hovedrett</h2>
+        <div className={styles.menuContainer}>
+          {meny
+            .filter((item) => item.kategori === "Hovedrett")
+            .map((menuItem) => (
+              <List key={menuItem.id} {...menuItem} />
+            ))}
+        </div>
+
+        <h2 className={styles.categoryTitle}>Dessert</h2>
+        <div className={styles.menuContainer}>
+          {meny
+            .filter((item) => item.kategori === "Dessert")
+            .map((menuItem) => (
+              <List key={menuItem.id} {...menuItem} />
+            ))}
+        </div>
       </main>
 
       <footer className={styles.footer}>
